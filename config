@@ -171,4 +171,4 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 exec spotify
-exec  feh --bg-scale /homme/etienne/Pictures/stars.jpg
+exec --no-startup-id feh --bg-fill ~/.background-image.jpg
