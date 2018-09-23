@@ -186,6 +186,7 @@ exec spotify
 exec firefox
 exec --no-startup-id feh --bg-fill ~/.background-image.jpg
 exec compton -f
+exec_always --no-startup-id numlockx on
 
 # Modification pour i3 GAPS
 for_window [class="^.*"] border pixel 2
