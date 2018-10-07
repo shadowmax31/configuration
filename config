@@ -182,6 +182,8 @@ bindsym XF86AudioStop exec playerctl stop
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+bindsym $mod+Shift+L exec i3lock-fancy
+
 exec spotify
 exec firefox
 exec --no-startup-id feh --bg-fill ~/.background-image.jpg
