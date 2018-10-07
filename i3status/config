@@ -1,0 +1,25 @@
+order += "volume master"
+order += "disk /"
+order += "wireless wlp0s16f1u1"
+order += "tztime local"
+
+wireless wlp0s16f1u1 {
+        format_up = "%ip"
+        format_down = "W: down"
+}
+
+tztime local {
+        format = "%Y-%m-%d %H:%M:%S"
+}
+
+disk "/" {
+        format = "%free"
+}
+
+volume master {
+        format = "♪: %volume"
+        format_muted = "♪: muted (%volume)"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
