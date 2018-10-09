@@ -1,1 +1,1 @@
-Repos to host all my config files
+Repo to host all my config files
