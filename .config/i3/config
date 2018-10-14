@@ -99,7 +99,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 set $workspace3 "3: Spotify"
-set $workspace2 "2: Firefox"
+set $workspace2 "2: Browser"
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -126,7 +126,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 for_window [class="Spotify"] move to workspace $workspace3
-for_window [class="Firefox"] move to workspace $workspace2
+for_window [class="qutebrowser"] move to workspace $workspace2
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -188,7 +188,7 @@ bindsym $mod+Escape exec i3lock-fancy
 bindsym $mod+e exec urxvt -e ranger
 
 exec spotify
-exec firefox
+exec qutebrowser
 exec --no-startup-id feh --bg-fill ~/.background-image.jpg
 exec compton -f
 exec_always --no-startup-id numlockx on
