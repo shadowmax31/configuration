@@ -8,13 +8,7 @@ settings:
       q: quit
       w: session-save
       wq: quit --save
-  editor.command:
+  bindings.commands:
     global:
-    - vim
-    - -f
-    - '{file}'
-    - -c
-    - normal {line}G{column0}l
-  url.searchengines:
-    global:
-      DEFAULT: https://duckduckgo.com/?q={}
+      normal:
+        ;m: hint links spawn mpv {hint-url}
