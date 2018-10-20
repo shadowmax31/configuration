@@ -17,6 +17,13 @@
 (eval-when-compile
   (require 'use-package))
 
+(use-package rainbow-mode
+  :ensure t
+  :config
+  (define-global-minor-mode rainbow rainbow-mode (lambda () (rainbow-mode 1)))
+  (rainbow 1)
+  )
+
 (use-package helm
   :ensure t)
 
@@ -90,7 +97,7 @@
     ("e2fd81495089dc09d14a88f29dfdff7645f213e2c03650ac2dd275de52a513de" "4757d7d892a38e2d0c9a86d9b83c1aa3e6f1a68ce7a370101ed91239b39e142b" "e08cf6a643018ccf990a099bcf82903d64f02e64798d13a1859e79e47c45616e" "8a9be13b2353a51d61cffed5123b157000da0347c252a7a308ebc43e16662de7" default)))
  '(package-selected-packages
    (quote
-    (ranger helm helm-spotify-plus multi evil-magit magit dumb-jump indent-guid indent-guide indent-guide-mode indent-guide-mmode aggressive-indent org-bullets neotree auto-complete web-mode evil use-package))))
+    (rainbow-mode ranger helm helm-spotify-plus multi evil-magit magit dumb-jump indent-guid indent-guide indent-guide-mode indent-guide-mmode aggressive-indent org-bullets neotree auto-complete web-mode evil use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
