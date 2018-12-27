@@ -140,3 +140,11 @@
 ;;Montre les liens entre les (, [, {
 (show-paren-mode t)
 
+;; store all backup and autosave files in the tmp dir
+(setq backup-directory-alist
+      `((".*" . ,"~/emacs_bck")))
+
+(setq auto-save-file-name-transforms
+      `((".*" ,"C:/emacs_bck" t)))
+
+
