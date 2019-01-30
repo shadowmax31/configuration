@@ -170,15 +170,15 @@ bindsym $mod+d mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-	position top
-	colors {
-		background $bg-color
-		inactive_workspace $bg-color $bg-color $text-color
-		focused_workspace $text-color $highlight-color $text-color
-	}
-}
+# bar {
+#         status_command i3status
+# 	position top
+# 	colors {
+# 		background $bg-color
+# 		inactive_workspace $bg-color $bg-color $text-color
+# 		focused_workspace $text-color $highlight-color $text-color
+# 	}
+# }
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
@@ -201,6 +201,7 @@ exec qutebrowser
 exec --no-startup-id feh --bg-fill ~/.background-image.jpg
 exec compton -f
 exec_always --no-startup-id numlockx on
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Modification pour i3 GAPS
 for_window [class="^.*"] border pixel 2
