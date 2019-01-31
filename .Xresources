@@ -3,14 +3,12 @@ URxvt.font: xft:DejaVu Sans Mono:size=12
 urxvt*termName: rxvt
 urxvt*scrollBar: false
 urxvt*matcher.button: 1
-urxvt.transparent: false
 urxvt.boldFont:
 Xft*dpi: 96
 Xft*antialias: true
 Xft*hinting: full
 URxvt*geometry: 85x20
 *internalBorder: 23
-URxvt*fading: 0
-URxvt*tintColor: #ffffff
-URxvt*shading: 0
-URxvt*inheritPixmap: False
+
+urxvt*transparent: true
+urxvt*shading: 30

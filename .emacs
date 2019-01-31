@@ -146,5 +146,3 @@
 
 (setq auto-save-file-name-transforms
       `((".*" ,"C:/emacs_bck" t)))
-
-
