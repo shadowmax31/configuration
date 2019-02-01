@@ -5,7 +5,10 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
 
-(setq package-enable-at-startup nil)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+
+ (setq package-enable-at-startup nil)
 (package-initialize)
 
 (add-hook 'find-file-hook 'linum-mode)
