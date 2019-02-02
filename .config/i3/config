@@ -195,7 +195,7 @@ bindsym $mod+Escape exec i3lock-fancy
 bindsym $mod+e exec urxvt -e ranger
 bindsym $mod+p exec redshift -P -O 4500
 bindsym $mod+Shift+p exec redshift -P -O 5800
-bindsym $mod+m exec emacs
+bindsym $mod+m exec urxvt -e emacs -nw
 
 exec spotify
 exec qutebrowser
