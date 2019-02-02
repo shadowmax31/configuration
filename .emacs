@@ -8,7 +8,7 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 
- (setq package-enable-at-startup nil)
+(setq package-enable-at-startup nil)
 (package-initialize)
 
 (add-hook 'find-file-hook 'linum-mode)
@@ -60,13 +60,6 @@
     (global-auto-complete-mode t)
     ))
 
-;; Configuration de neotree
-;;(use-package neotree
-;;  :ensure t)
-;;(bind-key "C-n" 'neotree-toggle evil-normal-state-map)
-;;(bind-key "C-N" 'neotree-toggle evil-visual-state-map)
-;;(bind-key "RET" 'neotree-enter evil-normal-state-map)
-
 ;; Configuration de org-mode
 (use-package org
   :ensure t
@@ -108,10 +101,6 @@
  ;; If there is more than one, they won't work right.
  )
 
-;;(use-package gruvbox-theme
-;;  :ensure t)
-;;(load-theme 'gruvbox-dark-hard)
-
 (use-package aggressive-indent
   :ensure t)
 (global-aggressive-indent-mode 1)
@@ -147,5 +136,5 @@
 (setq backup-directory-alist
       `((".*" . ,"~/emacs_bck")))
 
-(setq auto-save-file-name-transforms
-      `((".*" ,"C:/emacs_bck" t)))
+(setq auto-save-ile-name-transforms
+      `((".*" ,"~/emacs_bck" t)))
