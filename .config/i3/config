@@ -199,6 +199,7 @@ bindsym $mod+m exec emacs
 
 exec spotify
 exec qutebrowser
+exec xset -dpms s off
 exec --no-startup-id feh --bg-fill ~/.background-image.jpg
 exec compton -f
 exec_always --no-startup-id numlockx on
