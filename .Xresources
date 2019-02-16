@@ -11,4 +11,4 @@ URxvt*geometry: 85x20
 *internalBorder: 23
 
 urxvt*transparent: true
-urxvt*shading: 30
+urxvt*shading: 20
