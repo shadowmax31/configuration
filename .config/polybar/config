@@ -52,7 +52,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = i3
 modules-center = date
-modules-right = filesystem pulseaudio memory cpu 
+modules-right = filesystem pulseaudio
 
 tray-position = right
 tray-padding = 2
