@@ -12,3 +12,4 @@ alias r="/home/etienne/refresh_ip"
 source ~/.cache/wal/colors-tty.sh
 
 neofetch
+fish
