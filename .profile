@@ -7,3 +7,7 @@ ssh-add -q ~/.ssh/id_rsa > /dev/null
 ssh-add -q ~/.ssh/id_serveur > /dev/null
 
 wal -R
+
+#if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+#    exec startx
+#fi
