@@ -192,7 +192,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 bindsym $mod+Escape exec i3lock-fancy
-bindsym $mod+e exec st -e ranger
+bindsym $mod+e exec st -e nnn
 bindsym $mod+p exec redshift -P -O 4500
 bindsym $mod+Shift+p exec redshift -P -O 5800
 bindsym $mod+m exec emacs
