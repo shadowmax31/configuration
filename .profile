@@ -7,7 +7,7 @@ ssh-add -q ~/.ssh/id_rsa > /dev/null
 ssh-add -q ~/.ssh/id_serveur > /dev/null
 
 export NNN_BMS='r:~/repos;w:~/Pictures/Backgrounds'
-export NNN_SCRIPT='/home/etienne/.scripts/background-change.sh'
+export NNN_SCRIPT='/home/etienne/.scripts/nnn'
 
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
     exec startx
