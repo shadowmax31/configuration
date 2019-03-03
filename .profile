@@ -6,8 +6,6 @@ export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -q ~/.ssh/id_rsa > /dev/null
 ssh-add -q ~/.ssh/id_serveur > /dev/null
 
-wal -R
-
-#if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-#    exec startx
-#fi
+if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+    exec startx
+fi
