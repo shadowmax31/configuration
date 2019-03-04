@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+  eval $(ssh-agent) > /dev/null
+  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+fi
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+ssh-add -q ~/.ssh/id_serveur > /dev/null
+
+rsync -zaPv root@serveur.bck:/root/backup_db/ /run/media/etienne/data/Backup/BoutiqueX71/backup_db
+rsync -zaPv root@serveur.bck:/var/www/boutiquex71/ /run/media/etienne/data/Backup/BoutiqueX71/boutiquex71
