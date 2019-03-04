@@ -210,7 +210,7 @@
 
 ;; store all backup and autosave files in the tmp dir
 (setq backupdirectory-alist
-      `((".*" . ,"~/emacs_bck")))
+      `((".*" . ,"~/emacs_bck/")))
 
 (setq auto-save-file-name-transforms
-      `((".*" ,"~/emacs_bck" t)))
+      `((".*" ,"~/emacs_bck/" t)))

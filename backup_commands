@@ -1,4 +1,0 @@
-#!/bin/bash
-
-rsync -zaPv root@serveur.bck:/root/backup_db/ /run/media/etienne/data/Backup/BoutiqueX71/backup_db
-rsync -zaPv root@serveur.bck:/var/www/boutiquex71/ /run/media/etienne/data/Backup/BoutiqueX71/boutiquex71
