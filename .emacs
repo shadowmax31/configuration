@@ -21,6 +21,7 @@
 (eval-when-compile
   (require 'use-package))
 
+
 (use-package rainbow-mode
   :ensure t
   :config
@@ -208,9 +209,20 @@
 ;;Montre les liens entre les (, [, {
 (show-paren-mode t)
 
-;; store all backup and autosave files in the tmp dir
-(setq backupdirectory-alist
-      `((".*" . ,"~/emacs_bck/")))
+(defun count-words (start end)
+  (interactive "r")
+  (save-excursion
+    (let ((n 0))
+      (goto-char start)
+      (while (< (point) end)
+        (if (forward-word 1)
+            (setq n (1+ n))))
+      (message "%d words" n)
+      n)))
 
-(setq auto-save-file-name-transforms
-      `((".*" ,"~/emacs_bck/" t)))
+;; store all backup and autosave files in the tmp dir
+    (setq backup-directory-alist
+          `((".*" . ,"~/emacs_bck")))
+
+    (setq auto-save-file-name-transforms
+          `((".*" ,"~/emacs_bck" t)))
