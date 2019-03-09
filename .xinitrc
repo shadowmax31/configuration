@@ -1,0 +1,3 @@
+compton &
+
+exec dwm
