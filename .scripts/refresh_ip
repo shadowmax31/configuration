@@ -1,4 +1,4 @@
 #!/usr/bin/env fish
 
-sudo ifconfig wlp0s16f1u1 down
-sudo ifconfig wlp0s16f1u1 up
+sudo ifconfig wlp0s19f2u4 down
+sudo ifconfig wlp0s19f2u4 up
