@@ -1,5 +1,7 @@
 compton &
-feh --bg-fill ~/.background-image.jpg
+
+#Set random wallpaper
+`/home/etienne/.scripts/nnn/random_background.sh`
 
 numlockx on
 
