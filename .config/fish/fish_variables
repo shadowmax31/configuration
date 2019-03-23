@@ -3,6 +3,8 @@
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
+SETUVAR _fish_abbr_b:sysctl\x20hw\x2eacpi\x2ebattery
+SETUVAR _fish_abbr_t:sysctl\x20-a\x20|\x20grep\x20temperature
 SETUVAR _fish_abbr_r:/home/etienne/\x2escripts/refresh_ip
 SETUVAR _fish_abbr_s:ssh\x20root\x40serveur\x2ebck
 SETUVAR _fish_abbr_u:sudo\x20pacman\x20\x2dSyyu
