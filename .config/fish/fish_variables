@@ -4,9 +4,10 @@ SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
 SETUVAR _fish_abbr_b:sysctl\x20hw\x2eacpi\x2ebattery
-SETUVAR _fish_abbr_t:sysctl\x20-a\x20|\x20grep\x20temperature
+SETUVAR _fish_abbr_l:ssh\x20etienne\x40192\x2e168\x2e0\x2e64
 SETUVAR _fish_abbr_r:/home/etienne/\x2escripts/refresh_ip
 SETUVAR _fish_abbr_s:ssh\x20root\x40serveur\x2ebck
+SETUVAR _fish_abbr_t:sysctl\x20dev\x2ecpu\x20\x7c\x20grep\x20temperature
 SETUVAR _fish_abbr_u:sudo\x20pacman\x20\x2dSyyu
 SETUVAR _fish_abbr_work:sudo\x20rdesktop\x20\x2dg\x2095\x25\x20192\x2e168\x2e20\x2e154\x20\x2da\x2032
 SETUVAR fish_color_autosuggestion:555\x1ebrblack

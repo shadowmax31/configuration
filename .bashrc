@@ -8,8 +8,8 @@ alias work="sudo rdesktop -g 95% 192.168.20.154 -a 32"
 alias r="/home/etienne/refresh_ip"
 
 # Pour pywal
-(cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
+#(cat ~/.cache/wal/sequences &)
+#source ~/.cache/wal/colors-tty.sh
 
 neofetch
 fish
