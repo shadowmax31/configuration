@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/local/bin/bash
 
 current_dir="${PWD##*/}"
 date_heure=`date +"%Y%m%d-%H%M%S"`
