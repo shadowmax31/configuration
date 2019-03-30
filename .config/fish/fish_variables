@@ -10,6 +10,7 @@ SETUVAR _fish_abbr_s:ssh\x20root\x40serveur\x2ebck
 SETUVAR _fish_abbr_t:sysctl\x20dev\x2ecpu\x20\x7c\x20grep\x20temperature
 SETUVAR _fish_abbr_u:sudo\x20pacman\x20\x2dSyyu
 SETUVAR _fish_abbr_work:sudo\x20rdesktop\x20\x2dg\x2095\x25\x20192\x2e168\x2e20\x2e154\x20\x2da\x2032
+SETUVAR _fish_abbr_m:ncmpcpp
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7

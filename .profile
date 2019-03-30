@@ -13,6 +13,9 @@ export EDITOR=vim
 export NNN_BMS='r:~/repos;w:~/Pictures/Backgrounds;d:/mnt/data/'
 export NNN_SCRIPT='/home/etienne/.scripts/nnn'
 
+MPD_HOST=${HOME}/.mpd/socket;
+export MPD_HOST
+
 #if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
     exec startx
 #fi
