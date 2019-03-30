@@ -1,5 +1,5 @@
 !--------------------xdefauls
-URxvt.font: xft:DejaVu Sans Mono:size=12
+URxvt.font: xft:Liberation Mono:size=12
 urxvt*termName: rxvt
 urxvt*scrollBar: false
 urxvt*matcher.button: 1
@@ -11,4 +11,4 @@ URxvt*geometry: 85x20
 *internalBorder: 23
 
 urxvt*transparent: true
-urxvt*shading: 20
+urxvt*shading: 10
