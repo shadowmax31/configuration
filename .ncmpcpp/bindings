@@ -576,3 +576,13 @@ def_key "n"
 def_key "N"
 	previous_found_item
 
+
+#Volume control
+def_key "-"
+  volume_down
+
+def_key "="
+  volume_up
+
+def_key "+"
+  show_clock
