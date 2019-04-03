@@ -10,7 +10,7 @@ ssh-add -q ~/.ssh/etienne_pc > /dev/null
 # For cron jobs
 export EDITOR=vim
 
-export NNN_BMS='r:~/repos;w:~/Pictures/Backgrounds;d:/mnt/data/'
+export NNN_BMS='r:~/repos;w:~/Pictures/Backgrounds;d:/mnt/DATA/'
 export NNN_SCRIPT='/home/etienne/.scripts/nnn'
 
 MPD_HOST=${HOME}/.mpd/socket;
