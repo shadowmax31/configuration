@@ -5,6 +5,7 @@ SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
 SETUVAR _fish_abbr_b:sysctl\x20hw\x2eacpi\x2ebattery
 SETUVAR _fish_abbr_l:ssh\x20etienne\x40192\x2e168\x2e0\x2e64
+SETUVAR _fish_abbr_c:ssh\x20root\x40192\x2e168\x2e0\x2e65
 SETUVAR _fish_abbr_r:/home/etienne/\x2escripts/refresh_ip
 SETUVAR _fish_abbr_s:ssh\x20root\x40serveur\x2ebck
 SETUVAR _fish_abbr_t:sysctl\x20dev\x2ecpu\x20\x7c\x20grep\x20temperature

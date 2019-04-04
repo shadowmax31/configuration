@@ -17,6 +17,7 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
+(modify-syntax-entry ?_ "w")
 
 (eval-when-compile
   (require 'use-package))
