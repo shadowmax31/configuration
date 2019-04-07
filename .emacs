@@ -17,8 +17,6 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(modify-syntax-entry ?_ "w")
-
 (eval-when-compile
   (require 'use-package))
 
@@ -220,6 +218,8 @@
             (setq n (1+ n))))
       (message "%d words" n)
       n)))
+
+(modify-syntax-entry ?_ "w")
 
 ;; store all backup and autosave files in the tmp dir
     (setq backup-directory-alist
