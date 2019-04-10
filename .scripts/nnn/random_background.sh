@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/bin/sh
 
 #Set random wallpaper
 script_path="/home/etienne/.scripts"
