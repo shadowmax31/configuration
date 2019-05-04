@@ -11,8 +11,8 @@ battery_life=`sysctl hw.acpi.battery.life | awk -F " " '{print $2}'`
 battery_time=`sysctl hw.acpi.battery.time | awk -F " " '{print $2}'`
 
 if [ $battery_time != -1 ]; then
-    if [ -e "battery_life" ]; then
-        read last_value < battery_life
+    if [ -e "/var/tmp/battery_life" ]; then
+        read last_value < /var/tmp/battery_life
     else
         # We set the last value as the maximum
         last_value=100
@@ -28,10 +28,10 @@ if [ $battery_time != -1 ]; then
     fi
 
     last_value=$battery_life
-    echo $last_value > battery_life
+    echo $last_value > /var/tmp/battery_life
 else
     if [ -e "battery_life" ]; then
-        rm battery_life
+        rm /var/tmp/battery_life
     fi
 fi
 
