@@ -6,6 +6,7 @@ export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -q ~/.ssh/id_rsa > /dev/null
 ssh-add -q ~/.ssh/id_serveur > /dev/null
 ssh-add -q ~/.ssh/etienne_pc > /dev/null
+ssh-add -q ~/.ssh/id_rock_prod > /dev/null
 
 # For cron jobs
 export EDITOR=vim

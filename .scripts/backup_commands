@@ -6,6 +6,10 @@ if [ ! -S ~/.ssh/ssh_auth_sock ]; then
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -q ~/.ssh/id_serveur > /dev/null
+ssh-add -q ~/.ssh/id_rock_prod > /dev/null
 
-rsync -zaPv root@serveur.bck:/root/backup_db/ /mnt/data/Backup/BoutiqueX71/backup_db
-rsync -zaPv root@serveur.bck:/var/www/boutiquex71/ /mnt/data/Backup/BoutiqueX71/boutiquex71
+rsync -zaPv root@serveur.bck:/root/backup_db/ /mnt/data/Backup/BoutiqueX71_STAGING/backup_db
+rsync -zaPv root@serveur.bck:/var/www/boutiquex71/ /mnt/data/Backup/BoutiqueX71_STAGING/boutiquex71
+
+rsync -zaPv root@rock_prod:/root/backup_db/ /mnt/data/Backup/BoutiqueX71_PROD/backup_db
+rsync -zaPv root@rock_prod:/var/www/boutiquex71_PROD/ /mnt/data/Backup/BoutiqueX71_PROD/boutiquex71
