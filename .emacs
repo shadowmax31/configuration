@@ -67,6 +67,11 @@
   (setq org-log-done t)
   (setq org-agenda-files (list "~/agenda.org")))
 
+(use-package auto-dim-other-buffers
+  :ensure t
+  :config
+  (auto-dim-other-buffers-mode t))
+
 (use-package evil-org
   :ensure t
   :after org

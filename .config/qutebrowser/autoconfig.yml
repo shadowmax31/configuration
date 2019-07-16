@@ -6,4 +6,4 @@ settings:
   bindings.commands:
     global:
       normal:
-        ;m: hint links spawn mpv {hint-url}
+        ;m: hint links spawn mpv --autofix=500 {hint-url}
