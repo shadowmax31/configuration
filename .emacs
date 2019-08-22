@@ -1,4 +1,8 @@
+;;; package: --- Summary
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+
+;;; code:
+;;; commentary:
 
 (require 'package)
 
@@ -20,7 +24,6 @@
 
 (eval-when-compile
   (require 'use-package))
-
 
 (use-package rainbow-mode
   :ensure t
@@ -113,7 +116,7 @@
 
 (use-package aggressive-indent
   :ensure t)
-(global-aggressive-indent-mode 1)
+;; (global-aggressive-indent-mode 1)
 (add-to-list 'aggressive-indent-excluded-modes 'html-mode)
 
 ;; https://github.com/ggreer/the_silver_searcher#installing
@@ -139,8 +142,6 @@
 (use-package evil-magit
   :ensure t)
 
-;;C/C++ section
-
 (use-package company
   :ensure t
   :config
@@ -162,17 +163,6 @@
 ;;Montre les liens entre les (, [, {
 (show-paren-mode t)
 
-(defun count-words (start end)
-  (interactive "r")
-  (save-excursion
-    (let ((n 0))
-      (goto-char start)
-      (while (< (point) end)
-        (if (forward-word 1)
-            (setq n (1+ n))))
-      (message "%d words" n)
-      n)))
-
 (modify-syntax-entry ?_ "w")
 
 ;; store all backup and autosave files in the tmp dir
@@ -182,6 +172,6 @@
     (setq auto-save-file-name-transforms
           `((".*" ,"~/emacs_bck" t)))
 	
-(setq evil-insert-state-cursor '((hbar . 2) "yellow")
-      evil-normal-state-cursor '(box "purple"))
+(setq evil-insert-state-cursor '((hbar . 2) "yellow"))
+(setq evil-normal-state-cursor '(box "purple"))
 
