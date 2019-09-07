@@ -161,7 +161,10 @@
 (use-package flycheck
   :ensure t
   :config
-  (global-flycheck-mode))
+  (global-flycheck-mode)
+  (add-hook 'c++-mode-hook
+            (lambda () (setq flycheck-clang-include-path
+                             (list (expand-file-name "/usr/local/include"))))))
 
 (use-package projectile
   :ensure t)
