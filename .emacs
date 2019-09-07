@@ -35,6 +35,11 @@
   (add-hook 'c++-mode-hook (lambda () (rainbow-mode 0)))
   )
 
+(use-package autopair
+  :ensure t
+  :config
+  (add-hook 'prog-mode-hook (lambda () (autopair-mode))))
+
 (use-package helm
   :ensure t)
 
