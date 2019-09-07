@@ -165,6 +165,31 @@
 
 (modify-syntax-entry ?_ "w")
 
+;; Make for C++
+(require 'cc-mode)
+
+(defun get-parent-directory (path)
+  "Get the parent directory."
+  (file-name-directory (directory-file-name path)))
+
+
+(defun compile-make-ex (target)
+  "Run make to compile. provide more arguments."
+  (interactive "starget: ")
+  (let ((default-directory (locate-dominating-file default-directory "Makefile")))
+    (if default-directory
+        (compilation-start (format "make %s" target))
+        (message "cannot find Makefile"))))
+
+(defun compile-make ()
+  "Run make to compile."
+  (interactive)
+  (compile-make-ex ""))
+
+(bind-key "<f5>" 'compile-make c++-mode-map)
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+;; End Make for C++
+
 ;; store all backup and autosave files in the tmp dir
     (setq backup-directory-alist
           `((".*" . ,"~/emacs_bck")))
