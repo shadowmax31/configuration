@@ -13,5 +13,4 @@ export PATH="${PATH}:${HOME}/.local/bin/"
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh
 
-#neofetch
 fish

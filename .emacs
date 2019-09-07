@@ -25,10 +25,14 @@
 (eval-when-compile
   (require 'use-package))
 
+(use-package dracula-theme
+  :ensure t)
+
 (use-package rainbow-mode
   :ensure t
   :config
   (add-hook 'prog-mode-hook (lambda () (rainbow-mode 1)))
+  (add-hook 'c++-mode-hook (lambda () (rainbow-mode 0)))
   )
 
 (use-package helm
@@ -54,15 +58,6 @@
 (setq-default indent-tabs-mode nil)
 (setq web-mode-code-indent-offset 4)
 (setq web-mode-indent-style 4)
-
-;; Configuration de auto-complete
-(use-package auto-complete
-  :ensure t
-  :init
-  (progn
-    (ac-config-default)
-    (global-auto-complete-mode t)
-    ))
 
 ;; Configuration de org-mode
 (use-package org
@@ -102,28 +97,35 @@
     ("e2fd81495089dc09d14a88f29dfdff7645f213e2c03650ac2dd275de52a513de" "4757d7d892a38e2d0c9a86d9b83c1aa3e6f1a68ce7a370101ed91239b39e142b" "e08cf6a643018ccf990a099bcf82903d64f02e64798d13a1859e79e47c45616e" "8a9be13b2353a51d61cffed5123b157000da0347c252a7a308ebc43e16662de7" default)))
  '(package-selected-packages
    (quote
-    (deadgrep xresources-theme flycheck company flycheck-rtags company-rtags helm-rtags cmake-ide rtags projectile compagny evil-org rainbow-mode ranger helm helm-spotify-plus multi evil-magit magit dumb-jump indent-guid indent-guide indent-guide-mode indent-guide-mmode aggressive-indent org-bullets neotree auto-complete web-mode evil use-package))))
+    (deadgrep flycheck company flycheck-rtags company-rtags helm-rtags cmake-ide rtags projectile compagny evil-org rainbow-mode ranger helm helm-spotify-plus multi evil-magit magit dumb-jump indent-guid indent-guide indent-guide-mode indent-guide-mmode aggressive-indent org-bullets neotree auto-complete web-mode evil use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(auto-dim-other-buffers-face ((t (:background "gray8")))))
 
 (use-package deadgrep
   :ensure t)
 (bind-key "C-/" 'deadgrep evil-normal-state-map)
 
-(use-package aggressive-indent
-  :ensure t)
-;; (global-aggressive-indent-mode 1)
-(add-to-list 'aggressive-indent-excluded-modes 'html-mode)
+;;(use-package aggressive-indent
+;;  :ensure t)
+;;(add-hook 'prog-mode-hook 'aggressive-indent-mode)
+;;(add-to-list 'aggressive-indent-excluded-modes 'html-mode)
 
 ;; https://github.com/ggreer/the_silver_searcher#installing
-;; Voir s'il n'y a pas d;alternative (l'installation me tanne)
+;; ou ripgrep (rg)
+;; Voir s'il n'y a pas d'alternative (l'installation me tanne)
 (use-package dumb-jump
-  :ensure t)
-(dumb-jump-mode)
+  :ensure t
+  :config
+  (add-hook 'prog-mode-hook (lambda () (dumb-jump-mode 1)))
+  )
+
+(setq dumb-jump-selector 'helm)
+(setq dumb-jump-force-searcher 'rg)
+
 (bind-key "<f12>" 'dumb-jump-go evil-normal-state-map)
 (bind-key "<f12>" 'dumb-jump-go evil-insert-state-map)
 
@@ -147,8 +149,9 @@
   :config
   (progn
     (add-hook 'after-init-hook 'global-company-mode)
-    (global-set-key (kbd "M-/") 'company-complete-common-or-cycle)
-    (setq company-idle-delay 0)))
+    (global-set-key (kbd "C-SPC") 'company-complete)
+    (setq company-idle-delay 0)
+    (setq company-backend "helm")))
 
 (use-package flycheck
   :ensure t
@@ -186,7 +189,7 @@
   (interactive)
   (compile-make-ex ""))
 
-(bind-key "<f5>" 'compile-make c++-mode-map)
+(bind-key "<f4>" 'compile-make c++-mode-map)
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 ;; End Make for C++
 
