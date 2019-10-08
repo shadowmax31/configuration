@@ -6,4 +6,4 @@ config.set("url.searchengines", {
 
 config.set("editor.command", ["vim", "-f", "{file}", "-c", "normal {line}G{column0}l"]);
 
-config.bind('z', 'hint links spawn mpv {hint-url}');
+config.bind('z', 'hint links spawn mpv --autofit=500 {hint-url}');
