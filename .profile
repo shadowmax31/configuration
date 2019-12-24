@@ -16,6 +16,4 @@ export NNN_BMS='r:~/repos;w:~/Pictures/Backgrounds;d:/mnt/DATA/'
 MPD_HOST=${HOME}/.mpd/socket;
 export MPD_HOST
 
-#if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-    exec startx
-#fi
+exec startx
