@@ -1,6 +1,6 @@
 syntax on
 set number
-set clipboard=unnamed
+set clipboard=unnamedplus
 set tabstop=4
 
 noremap  <Up> <NOP>
