@@ -8,7 +8,6 @@ SETUVAR _fish_abbr_c:ssh\x20root\x40192\x2e168\x2e0\x2e65
 SETUVAR _fish_abbr_l:ssh\x20serveur\x40192\x2e168\x2e0\x2e64
 SETUVAR _fish_abbr_m:ncmpcpp
 SETUVAR _fish_abbr_p:ssh\x20root\x40rock_prod
-SETUVAR _fish_abbr_r:/home/etienne/\x2escripts/refresh_ip
 SETUVAR _fish_abbr_s:ssh\x20root\x40serveur\x2ebck
 SETUVAR _fish_abbr_t:sysctl\x20dev\x2ecpu\x20\x7c\x20grep\x20temperature
 SETUVAR _fish_abbr_u:sudo\x20umount\x20/media/*
