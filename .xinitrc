@@ -4,5 +4,6 @@ compton &
 `/home/etienne/.scripts/nnn/random_background.sh`
 
 #AutoMount USB Sticks and drive
-dsbmc-cli -a
+dsbmc-cli -a &
+
 exec dwm
