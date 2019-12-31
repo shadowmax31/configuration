@@ -11,6 +11,8 @@ SETUVAR _fish_abbr_p:ssh\x20root\x40rock_prod
 SETUVAR _fish_abbr_s:ssh\x20root\x40serveur\x2ebck
 SETUVAR _fish_abbr_t:sysctl\x20dev\x2ecpu\x20\x7c\x20grep\x20temperature
 SETUVAR _fish_abbr_u:sudo\x20umount\x20/media/*
+SETUVAR _fish_abbr_mw:sudo\x20/usr/home/etienne/.scripts/mount_wd.sh
+SETUVAR _fish_abbr_uw:sudo\x20/usr/home/etienne/.scripts/unmount_wd.sh
 SETUVAR _fish_abbr_work:sudo\x20rdesktop\x20\x2dg\x2095\x25\x20192\x2e168\x2e20\x2e154\x20\x2da\x2032
 SETUVAR fish_color_autosuggestion:FFC473
 SETUVAR fish_color_cancel:\x2dr
